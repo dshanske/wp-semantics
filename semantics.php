@@ -36,8 +36,8 @@ if (!function_exists('get_attributes')) {
 }
 
 if (!function_exists('the_attributes')) {
-  function the_attributes($id) {
-    $classes = get_the_attributes($id);
+  function the_attributes($id, $class = null) {
+    $classes = get_the_attributes($id, $class);
     if (!$classes) {
       return;
     }
